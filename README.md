@@ -8,7 +8,7 @@ more information can be found here: https://filsender.org
 
 To setup the filesender locally please follow this instruction:
 
-1. git pull git@github.com:dameyerdave/filesender.git
+1. git pull git@github.com:ETH-NEXUS/filesender.git
 2. docker compose up -d
 3. goto [https://localhost](https://localhost)
 4. To check emails goto [http://localhost:8025](http://localhost:8025)
