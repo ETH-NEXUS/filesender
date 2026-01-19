@@ -1,0 +1,19 @@
+services:
+  filesender:
+    image: filesender
+    build:
+      context: .
+      args: 
+        RELEASE: 3.3
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - mailpit
+    restart: unless-stopped
+  mailpit:
+    image: axllent/mailpit:v1.28
+    hostname: mailpit
+    restart: unless-stopped
+    ports:
+      - 8025:8025
